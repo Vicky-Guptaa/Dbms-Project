@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="lg:text-[95%] md:text-[90%] sm:text-[85%]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Item Details</title>
+</head>
+
+<body class="bg-[url('Images/Background.png')]">
+    <div class="wrapper w-11/12 m-auto md:w-10/12">
+        <header>
+            <div class="mx-auto">
+                <div class="flex justify-between item-center border-b-[0.15rem] border-slate-300 z-10">
+
+                    <div class="flex items-center space-x-1 my-2">
+                        <a class="item-center" href="/home"><img class="h-10" src="images/logo.png"
+                                alt="titles cart"></a>
+                    </div>
+
+                    <div class="flex md:hidden items-center space-x-1">
+                        <a class="py-3 px-2" href="/">Home</a>
+                        <a class="py-3 px-2" href="/contact">Contact</a>
+                        <a class="py-3 px-2" href="/about">About</a>
+                        <a class="py-3 px-2" href="/explore">Explore</a>
+                    </div>
+
+                    <div class="items-center flex space-x-1 my-3">
+
+                        <a class="py-1 px-3 text-white bg-black rounded-full" href="/register">Register</a>
+                        <a class="py-1 px-3 border border-black rounded-full hover:text-white hover:bg-black transition duration-500"
+                            href="/login">Sign In</a>
+                        <div class="hidden md:flex item-center">
+                            <button class="mobile-menu-button py-1 pr-2 pl-4 duration-500 ease-in-out">
+                                <div class="hamburger-line flex flex-col w-8 h-[1.38rem] justify-between items-center">
+                                    <div
+                                        class="line line-1 w-7 h-[0.15rem] bg-black duration-200 ease-in-out  origin-[0%]">
+                                    </div>
+                                    <div class="line line-2 w-7 h-[0.15rem] bg-black duration-100 ease-in-out"></div>
+                                    <div
+                                        class="line line-3 w-7 h-[0.15rem] bg-black duration-200 ease-in-out origin-[0]">
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu grid justify-items-center hidden ">
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/">Home</a>
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/contact">Contact</a>
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/about">About</a>
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/explore">Explore</a>
+            </div>
+        </header>
+
+        <main class="mt-4">
+            <section class="flex gap-10 my-12 justify-between items-center md:flex-col">
+                <div class="hidden md:block bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
+                    <h1 class="text-2xl text-primary-blue-dark"><span class="font-semibold">C++ Handwritten
+                            Notes </span> (2022) | Jamia B.Tech | CS Notes</h1>
+                </div>
+                <div class="notes-image-button-wrapper flex gap-8 flex-col basis-1/2 lg:h-[32rem]">
+
+                    <div
+                        class="notes-image flex justify-between bg-white px-5 py-6 gap-4 h-full shadow-lg shadow-gray-400 rounded-xl ">
+
+                        <div class="flex flex-col justify-between  w-[20%] gap-4">
+
+                            <div class=""><img src="/Images/image 2.png" class="" alt="">
+                            </div>
+                            <div class=""><img src="/Images/image 2.png" class=" object-cover" alt="">
+                            </div>
+                            <div class=""><img src="/Images/image 2.png" class="object-cover " alt="">
+                            </div>
+                            <div class=""><img src="/Images/image 2.png" class="object-cover " alt="">
+                            </div>
+                            <div class=""><img src="/Images/image 2.png" class="object-cover" alt="">
+                            </div>
+                        </div>
+                        <div class="w-[60%]">
+                            <img src="Images/image 1.png" class="h-full w-full object-cover" alt="">
+                        </div>
+                        <div class="flex justify-evenly gap-4 text-primary-blue w-[10%]">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col  gap-10 basis-1/2 md:flex-col-reverse md:w-full">
+                    <div class="bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
+                        <div class="md:hidden">
+                            <h1 class="text-3xl text-primary-blue-dark"><span class="font-semibold">C++ Handwritten
+                                    Notes </span> (2022) | Jamia B.Tech | CS Notes</h1>
+                        </div>
+                        <div class="flex items-center justify-between mt-12 md:mt-0">
+                            <div>
+                                <div class=" text-primary-blue">
+                                    <p>Written By : <span class="font-semibold">Faiz Iqbal</span></p>
+                                </div>
+                                <div class="mt-4 flex"><i class="fa-solid fa-star text-yellow-400 mr-2"></i>
+                                    <p class="text-xs text-primary-blue">4.5/5 | 100 Ratings</p>
+                                </div>
+                            </div>
+                            <div class="flex text-primary-blue-dark items-center">
+                                <p class="text-primary-blue mr-2">Price : </p> <i
+                                    class="fa-solid fa-indian-rupee-sign text-xl"></i>
+                                <p class=" text-xl font-bold ml-1">1,000</p>
+                            </div>
+                        </div>
+                        <hr class="border-[0.1rem] mt-8">
+                        <div class="flex mt-8 mb-4 justify-between px-2 lg:flex-col lg:items-center lg:gap-4">
+
+                            <div class="flex gap-6 ml-2 w-full justify-between">
+                                <div class="flex gap-2 items-center"><i
+                                        class="fa-solid fa-calendar-days text-xl text-primary-blue"></i>
+                                    <div>
+                                        <p class="text-xs text-primary-blue-light">Date Posted</p>
+                                        <p class="text-sm text-primary-blue">12-MAR-2022</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <div><i class="fa-solid fa-location-dot text-xl text-primary-blue"></i></div>
+                                    <div>
+                                        <p class="text-xs text-primary-blue-light">Location</p>
+                                        <p class="text-sm text-primary-blue">Banaras</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-evenly lg:flex-col lg:items-center ">
+                        <button
+                            class="bg-primary-blue text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full lg:mb-6">Chat
+                            With Seller</button>
+                        <button
+                            class="bg-primary-blue-dark text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full">Contact</button>
+                    </div>
+                </div>
+            </section>
+            <section class="">
+                <div class="bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
+                    <h1 class="text-2xl font-bold text-primary-blue">Discription</h1>
+                    <hr class="border-[0.1rem] mt-4">
+                    <p class="mt-4 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                        quaerat officia, totam explicabo nisi, consequuntur vero unde voluptate quidem dolorum, in
+                        assumenda inventore incidunt aut dolorem. Natus odio dolorum quas ipsum sint quibusdam
+                        necessitatibus perspiciatis atque, doloribus temporibus placeat quod exercitationem alias.
+                        Recusandae tempora ad reiciendis officiis perspiciatis necessitatibus facilis at blanditiis.
+                    </p>
+                </div>
+            </section>
+            <section class="my-16">
+                <div class="bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
+                    <h1 class="text-2xl font-bold text-primary-blue">Some More Similar Notes</h1>
+                    <hr class="border-[0.1rem] my-4">
+                    <div class="flex items-center justify-around gap-8">
+                        <button class="left-slide"><i
+                                class="fa-solid fa-angle-left text-3xl text-slate-500"></i></button>
+                        <div class="cards flex  gap-8 ">
+                            <div class="card rounded-xl shadow-lg shadow-slate-300 lg:hidden">
+                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
+                                <div class="px-3 py-4">
+                                    <div class="flex text-primary-blue-dark items-center">
+                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
+                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
+                                        <p class=" text-xl font-bold ml-1">1,000</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <div class=" text-primary-blue">
+                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
+                                                    Iqbal</span></p>
+                                        </div>
+                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-xl shadow-lg shadow-slate-300 md:hidden">
+                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
+                                <div class="px-3 py-4">
+                                    <div class="flex text-primary-blue-dark items-center">
+                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
+                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
+                                        <p class=" text-xl font-bold ml-1">1,000</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <div class=" text-primary-blue">
+                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
+                                                    Iqbal</span></p>
+                                        </div>
+                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-xl shadow-lg shadow-slate-300 sm:hidden">
+                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
+                                <div class="px-3 py-4">
+                                    <div class="flex text-primary-blue-dark items-center">
+                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
+                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
+                                        <p class=" text-xl font-bold ml-1">1,000</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <div class=" text-primary-blue">
+                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
+                                                    Iqbal</span></p>
+                                        </div>
+                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-xl shadow-lg shadow-slate-300">
+                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
+                                <div class="px-3 py-4">
+                                    <div class="flex text-primary-blue-dark items-center">
+                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
+                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
+                                        <p class=" text-xl font-bold ml-1">1,000</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <div class=" text-primary-blue">
+                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
+                                                    Iqbal</span></p>
+                                        </div>
+                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="right-slide"><i
+                                class="fa-solid fa-angle-right text-3xl text-slate-500"></i></button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript">
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+        const menuLines = document.querySelectorAll(".line");
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            menuLines[0].classList.toggle("rotate-45");
+            menuLines[1].classList.toggle("opacity-0");
+            menuLines[2].classList.toggle("-rotate-45");
+
+        });
+    </script>
+</body>
+
+</html>
