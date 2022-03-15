@@ -13,7 +13,11 @@
 </head>
 
 <body class="bg-[url('Images/Background.png')]">
+
+    <!-- Wrapper Around The Whole Elements  -->
     <div class="wrapper w-11/12 m-auto md:w-10/12">
+
+        <!-- Navbar -->
         <header>
             <div class="mx-auto">
                 <div class="flex justify-between item-center border-b-[0.15rem] border-slate-300 z-10">
@@ -59,33 +63,44 @@
             </div>
         </header>
 
+        <!-- The Main Content -->
         <main class="mt-4">
+
             <section class="flex gap-10 my-12 justify-between items-center md:flex-col">
+
+                <!-- Heading Visible Only For Small Screen -->
                 <div class="hidden md:block bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
                     <h1 class="text-2xl text-primary-blue-dark"><span class="font-semibold">C++ Handwritten
                             Notes </span> (2022) | Jamia B.Tech | CS Notes</h1>
                 </div>
+
+                <!-- Image Part Of The Item -->
                 <div class="notes-image-button-wrapper flex gap-8 flex-col basis-1/2 lg:h-[32rem]">
 
                     <div
                         class="notes-image flex justify-between bg-white px-5 py-6 gap-4 h-full shadow-lg shadow-gray-400 rounded-xl ">
 
+                        <!-- Small Images  -->
                         <div class="flex flex-col justify-between  basis-1/5 gap-4">
 
-                            <div class=""><img src="/Images/image 2.png" class="" alt="">
+                            <div class=""><button><img src="/Images/image 2.png" class="" alt=""></button>
                             </div>
-                            <div class=""><img src="/Images/image 2.png" class=" object-cover" alt="">
+                            <div class=""><button><img src="/Images/image 2.png" class=" object-cover" alt=""></button>
                             </div>
-                            <div class=""><img src="/Images/image 2.png" class="object-cover " alt="">
+                            <div class=""><button><img src="/Images/image 2.png" class="object-cover " alt=""></button>
                             </div>
-                            <div class=""><img src="/Images/image 2.png" class="object-cover " alt="">
+                            <div class=""><button><img src="/Images/image 2.png" class="object-cover " alt=""></button>
                             </div>
-                            <div class=""><img src="/Images/image 2.png" class="object-cover" alt="">
+                            <div class=""><button><img src="/Images/image 2.png" class="object-cover" alt=""></button>
                             </div>
                         </div>
+
+                        <!-- Main Image To Show -->
                         <div class="basis-9/12">
                             <img src="Images/image 1.png" class="h-full w-full object-cover" alt="">
                         </div>
+
+                        <!-- Like And Share -->
                         <div class="flex flex-col gap-4 text-primary-blue ">
                             <button>
                                 <i class="fa-solid fa-heart"></i>
@@ -96,12 +111,16 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Info About The Item -->
                 <div class="flex flex-col  gap-10 basis-1/2 md:flex-col-reverse md:w-full">
+
                     <div class="bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
                         <div class="md:hidden">
                             <h1 class="text-3xl text-primary-blue-dark"><span class="font-semibold">C++ Handwritten
                                     Notes </span> (2022) | Jamia B.Tech | CS Notes</h1>
                         </div>
+
                         <div class="flex items-center justify-between mt-12 md:mt-0">
                             <div>
                                 <div class=" text-primary-blue">
@@ -117,7 +136,9 @@
                                 <p class=" text-xl font-bold ml-1">1,000</p>
                             </div>
                         </div>
+
                         <hr class="border-[0.1rem] mt-8">
+
                         <div class="flex mt-8 mb-4 justify-between px-2 lg:flex-col lg:items-center lg:gap-4">
 
                             <div class="flex gap-6 ml-2 w-full justify-between">
@@ -138,6 +159,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Main Buttons -->
                     <div class="flex justify-evenly lg:flex-col lg:items-center ">
                         <button
                             class="bg-primary-blue text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full lg:mb-6">Chat
@@ -147,6 +170,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Description  -->
             <section class="">
                 <div class="bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
                     <h1 class="text-2xl font-bold text-primary-blue">Discription</h1>
@@ -159,6 +184,8 @@
                     </p>
                 </div>
             </section>
+
+            <!-- Image Carosel -->
             <section class="my-16">
                 <div class="bg-white px-6 py-8 shadow-lg shadow-gray-400 rounded-xl">
                     <h1 class="text-2xl font-bold text-primary-blue">Some More Similar Notes</h1>
