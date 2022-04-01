@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="lg:text-[95%] md:text-[90%] sm:text-[85%]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/app.js" type="module" defer></script>
+    <title>Explore</title>
+</head>
+
+<body class="bg-slate-100 font-Nunito">
+
+    <!-- Wrapper Around The Whole Elements  -->
+    <div class="wrapper w-11/12 m-auto md:w-10/12">
+
+        <!-- Navbar -->
+        <header>
+            <div class="mx-auto">
+                <div class="flex justify-between item-center border-b-[0.15rem] border-slate-300 z-10">
+
+                    <div class="flex items-center space-x-1 my-2">
+                        <a class="item-center" href="/home"><img class="h-10" src="images/logo.png"
+                                alt="titles cart"></a>
+                    </div>
+
+                    <div class="flex md:hidden items-center space-x-1">
+                        <a class="py-3 px-2" href="/">Home</a>
+                        <a class="py-3 px-2" href="/contact">Contact</a>
+                        <a class="py-3 px-2" href="/about">About</a>
+                        <a class="py-3 px-2" href="/explore">Explore</a>
+                    </div>
+
+                    <div class="items-center flex space-x-1 my-3">
+
+                        <a class="py-1 px-3 text-white bg-black rounded-full" href="/register">Register</a>
+                        <a class="py-1 px-3 border border-black rounded-full hover:text-white hover:bg-black transition duration-500"
+                            href="/login">Sign In</a>
+                        <div class="hidden md:flex item-center">
+                            <button class="mobile-menu-button py-1 pr-2 pl-4 duration-500 ease-in-out">
+                                <div class="hamburger-line flex flex-col w-8 h-[1.38rem] justify-between items-center">
+                                    <div
+                                        class="line line-1 w-7 h-[0.15rem] bg-black duration-200 ease-in-out  origin-[0%]">
+                                    </div>
+                                    <div class="line line-2 w-7 h-[0.15rem] bg-black duration-100 ease-in-out"></div>
+                                    <div
+                                        class="line line-3 w-7 h-[0.15rem] bg-black duration-200 ease-in-out origin-[0]">
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu grid justify-items-center hidden ">
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/">Home</a>
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/contact">Contact</a>
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/about">About</a>
+                <a class="block py-2 hover:bg-cyan-300 px-4" href="/explore">Explore</a>
+            </div>
+        </header>
+
+        <!-- The Main Content -->
+        <main class="mb-12">
+            <section class="text-center mt-12">
+                <h1 class="text-gray-700 text-4xl font-bold  ">Explore</h1>
+                <p class="text-gray-500 font-semibold mt-2 text-xl">our wide range of notes from around the world</p>
+            </section>
+            <!-- Search Widgets -->
+            <section class="mt-8">
+                <form action="" method="" class="grid place-content-center mt-4">
+                    <div class="max-w-fit flex relative">
+                        <input type="text" placeholder="search..."
+                            class="search-here bg-none outline-none rounded-lg h-full py-3 px-3 w-16 duration-500 ease-in-out shadow-md shadow-gray-500 ">
+                        <button class="btn-search-here bg-cyan-500 px-6 py-2 rounded-lg  absolute -right-1">
+                            <i
+                                class="text-white fa-solid fa-magnifying-glass text-2xl hover:scale-110 duration-300 ease-in-out"></i>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section class="mt-12 cards grid grid-cols-3 gap-8 md:grid-cols-2 sm:grid-cols-1">
+                <div class="card flex flex-col rounded-xl shadow-lg shadow-gray-400 overflow-hidden relative bg-white">
+                    <img src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-e1464023124869.jpeg"
+                        class="object-cover w-full h-72 p-2 rounded-t-2xl" alt="">
+                    <div
+                        class="absolute h-8 right-4 top-4 bg-white rounded-full flex items-center justify-center px-3 text-cyan-500 font-bold">
+                        <i class="fa-solid fa-indian-rupee-sign mr-1"></i><span> 100</span>
+                    </div>
+                    <div class="detailpy-4 px-5 text-primary-blue mt-2">
+                        <div class="flex justify-between">
+                            <h3 class=""><span class="font-bold">Faiz Iqbal</span>, <span
+                                    class="font-semibold">Varanasi</span></h3>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-300"></i> <span>
+                                    4.5/5 | </span><span>340</span> Ratings
+                            </div>
+                        </div>
+                        <div class="mt-5 text-primary-blue-dark text-center ">
+                            <h3 class=" text-2xl font-extrabold ">
+                                C++ Handwritten Notes
+                            </h3>
+                            <p class="text-md mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                                aperiam.</p>
+                        </div>
+                        <div class="flex justify-center mt-5 mb-4">
+                            <button
+                                class="bg-cyan-500 text-white font-bold px-4 py-2 rounded-lg hover:scale-110 active:scale-95 duration-300 ease-in-out">
+                                Know More <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col rounded-xl shadow-lg shadow-gray-400 overflow-hidden relative bg-white">
+                    <img src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-e1464023124869.jpeg"
+                        class="object-cover w-full h-72 p-2 rounded-t-2xl" alt="">
+                    <div
+                        class="absolute h-8 right-4 top-4 bg-white rounded-full flex items-center justify-center px-3 text-cyan-500 font-bold">
+                        <i class="fa-solid fa-indian-rupee-sign mr-1"></i><span> 100</span>
+                    </div>
+                    <div class="detailpy-4 px-5 text-primary-blue mt-2">
+                        <div class="flex justify-between">
+                            <h3 class=""><span class="font-bold">Faiz Iqbal</span>, <span
+                                    class="font-semibold">Varanasi</span></h3>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-300"></i> <span>
+                                    4.5/5 | </span><span>340</span> Ratings
+                            </div>
+                        </div>
+                        <div class="mt-5 text-primary-blue-dark text-center ">
+                            <h3 class=" text-2xl font-extrabold ">
+                                C++ Handwritten Notes
+                            </h3>
+                            <p class="text-md mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                                aperiam.</p>
+                        </div>
+                        <div class="flex justify-center mt-5 mb-4">
+                            <button
+                                class="bg-cyan-500 text-white font-bold px-4 py-2 rounded-lg hover:scale-110 active:scale-95 duration-300 ease-in-out">
+                                Know More <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex flex-col rounded-xl shadow-lg shadow-gray-400 overflow-hidden relative bg-white">
+                    <img src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-e1464023124869.jpeg"
+                        class="object-cover w-full h-72 p-2 rounded-t-2xl" alt="">
+                    <div
+                        class="absolute h-8 right-4 top-4 bg-white rounded-full flex items-center justify-center px-3 text-cyan-500 font-bold">
+                        <i class="fa-solid fa-indian-rupee-sign mr-1"></i><span> 100</span>
+                    </div>
+                    <div class="detailpy-4 px-5 text-primary-blue mt-2">
+                        <div class="flex justify-between">
+                            <h3 class=""><span class="font-bold">Faiz Iqbal</span>, <span
+                                    class="font-semibold">Varanasi</span></h3>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-300"></i> <span>
+                                    4.5/5 | </span><span>340</span> Ratings
+                            </div>
+                        </div>
+                        <div class="mt-5 text-primary-blue-dark text-center ">
+                            <h3 class=" text-2xl font-extrabold ">
+                                C++ Handwritten Notes
+                            </h3>
+                            <p class="text-md mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
+                                aperiam.</p>
+                        </div>
+                        <div class="flex justify-center mt-5 mb-4">
+                            <button
+                                class="bg-cyan-500 text-white font-bold px-4 py-2 rounded-lg hover:scale-110 active:scale-95 duration-300 ease-in-out">
+                                Know More <i class="fa-solid fa-circle-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
