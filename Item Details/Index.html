@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="flex md:hidden items-center space-x-1">
-                        <a class="py-3 px-2" href="/">Home</a>
+                        <a class="py-3 px-2 " href="/">Home</a>
                         <a class="py-3 px-2" href="/contact">Contact</a>
                         <a class="py-3 px-2" href="/about">About</a>
                         <a class="py-3 px-2" href="/explore">Explore</a>
@@ -76,38 +76,42 @@
                 </div>
 
                 <!-- Image Part Of The Item -->
-                <div class="notes-image-button-wrapper flex gap-8 flex-col basis-1/2 lg:h-[32rem]">
+                <div class="notes-image-button-wrapper flex gap-8 flex-col basis-1/2">
 
                     <div
-                        class="notes-image flex justify-between bg-white px-5 py-6 gap-4 h-full shadow-lg shadow-gray-400 rounded-xl ">
+                        class="notes-image justify-between flex bg-white px-5 py-6 gap-4 h-[32rem] shadow-lg shadow-gray-400 rounded-xl ">
 
                         <!-- Small Images  -->
-                        <div class="flex flex-col justify-between  basis-1/5 gap-4">
-
-                            <div class=""><button><img src="/Images/image 2.png" class="" alt=""></button>
-                            </div>
-                            <div class=""><button><img src="/Images/image 2.png" class=" object-cover" alt=""></button>
-                            </div>
-                            <div class=""><button><img src="/Images/image 2.png" class="object-cover " alt=""></button>
-                            </div>
-                            <div class=""><button><img src="/Images/image 2.png" class="object-cover " alt=""></button>
-                            </div>
-                            <div class=""><button><img src="/Images/image 2.png" class="object-cover" alt=""></button>
-                            </div>
+                        <div class="flex flex-col  basis-1/5 gap-4">
+                            <button class="side-image shadow-sm shadow-gray-400 ">
+                                <div class="highlight-selected h-24"><img src="/Images/image 1.png"
+                                        class=" object-cover object-top h-full w-full" alt="">
+                                </div>
+                            </button>
+                            <button class="side-image shadow-sm shadow-gray-400">
+                                <div class="h-24"><img src="/Images/image 2.png"
+                                        class=" object-cover object-top h-full w-full" alt="">
+                                </div>
+                            </button>
+                            <button class="side-image shadow-sm shadow-gray-400">
+                                <div class="h-24"><img src="/Images/Mask group.png"
+                                        class=" object-cover object-top h-full w-full" alt="">
+                                </div>
+                            </button>
                         </div>
 
                         <!-- Main Image To Show -->
-                        <div class="basis-9/12">
-                            <img src="Images/image 1.png" class="h-full w-full object-cover" alt="">
+                        <div class="main-image basis-9/12 flex shadow-md shadow-gray-400">
+                            <img src="Images/image 1.png" class="h-full w-full object-cover object-top" alt="">
                         </div>
 
                         <!-- Like And Share -->
                         <div class="flex flex-col gap-4 text-primary-blue ">
-                            <button>
-                                <i class="fa-solid fa-heart"></i>
+                            <button class="hover:scale-125 active:scale-95 duration-300 ease-in-out">
+                                <i class="fa-solid fa-heart text-lg"></i>
                             </button>
-                            <button>
-                                <i class="fa-solid fa-share-nodes"></i>
+                            <button class="hover:scale-125 active:scale-95 duration-300 ease-in-out">
+                                <i class="fa-solid fa-share-nodes text-lg"></i>
                             </button>
                         </div>
                     </div>
@@ -124,36 +128,39 @@
 
                         <div class="flex items-center justify-between mt-12 md:mt-0">
                             <div class="flex flex-col">
-                                <div class=" text-primary-blue">
-                                    <p>Written By : <span class="font-semibold">Faiz Iqbal</span></p>
+                                <div class="flex text-primary-blue-dark items-center">
+                                    <p class="text-primary-blue mr-2">Price : </p> <i
+                                        class="fa-solid fa-indian-rupee-sign text-xl"></i>
+                                    <p class=" text-xl font-bold ml-1">1,000</p>
                                 </div>
-                                <div class="mt-4 flex"><i class="fa-solid fa-star text-yellow-400 mr-2"></i>
-                                    <p class="text-xs text-primary-blue">4.5/5 | 100 Ratings</p>
+                                <div class=" text-primary-blue mt-4">
+                                    <p class="text-md">Posted By : <span class="font-semibold">Faiz Iqbal</span></p>
                                 </div>
-                                <div class="rate-author w-full mt-4">
-                                    <div class="w-2/3 peer-first:bg-yellow-50 flex justify-between items-center">
-                                        <button class="flex flex-col gap-3"><i
-                                                class="star star1 fa-solid fa-star text-sm"></i>
+                            </div>
+                            <div>
+                                <div class=" flex "><i class="fa-solid fa-star text-yellow-400 mr-2"></i>
+                                    <p class="text-sm text-primary-blue">4.5/5 | 100 Ratings</p>
+                                </div>
+                                <div class="rate-author w-36 mt-4">
+                                    <div class=" peer-first:bg-yellow-50 flex justify-around items-center">
+                                        <button class=""><i
+                                                class="star star1 fa-solid fa-star text-md hover:scale-125 scale-95 duration-300 ease-in-out"></i>
                                         </button>
-                                        <button class="flex flex-col gap-3"><i
-                                                class="star star2 fa-solid fa-star text-sm">
+                                        <button class=""><i
+                                                class="star star2 fa-solid fa-star text-md hover:scale-125 scale-95 duration-300 ease-in-out">
                                             </i></button>
-                                        <button class="flex flex-col gap-3"><i
-                                                class="star star3 fa-solid fa-star text-sm">
+                                        <button class=""><i
+                                                class="star star3 fa-solid fa-star text-md hover:scale-125 scale-95 duration-300 ease-in-out">
                                             </i></button>
-                                        <button class="flex flex-col gap-3"><i
-                                                class="star star4 fa-solid fa-star text-sm"></i></button>
-                                        <button class="flex flex-col gap-3"><i
-                                                class="star star5 fa-solid fa-star text-sm">
+                                        <button class=""><i
+                                                class="star star4 fa-solid fa-star text-md hover:scale-125 scale-95 duration-300 ease-in-out"></i></button>
+                                        <button class=""><i
+                                                class="star star5 fa-solid fa-star text-md hover:scale-125 scale-95 duration-300 ease-in-out">
                                             </i></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex text-primary-blue-dark items-center">
-                                <p class="text-primary-blue mr-2">Price : </p> <i
-                                    class="fa-solid fa-indian-rupee-sign text-xl"></i>
-                                <p class=" text-xl font-bold ml-1">1,000</p>
-                            </div>
+
                         </div>
 
                         <hr class="border-[0.1rem] mt-8">
@@ -182,10 +189,10 @@
                     <!-- Main Buttons -->
                     <div class="flex justify-evenly lg:flex-col lg:items-center ">
                         <button
-                            class="bg-primary-blue text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full lg:mb-6">Chat
+                            class="bg-primary-blue hover:scale-110 active:scale-95 duration-300 ease-in-out text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full lg:mb-6">Chat
                             With Seller</button>
                         <button
-                            class="bg-primary-blue-dark text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full">Contact</button>
+                            class="bg-primary-blue-dark hover:scale-110 active:scale-95 duration-300 ease-in-out text-white px-4 py-3 w-2/5 font-semibold text-lg rounded-lg lg:w-full">Contact</button>
                     </div>
                 </div>
             </section>
@@ -211,8 +218,8 @@
                     <hr class="border-[0.1rem] my-4">
                     <div class="flex items-center justify-around gap-8">
                         <button class="left-slide"><i
-                                class="fa-solid fa-angle-left text-3xl text-slate-500"></i></button>
-                        <div class="cards flex  gap-8 ">
+                                class="fa-solid fa-angle-left text-3xl text-slate-500 hover:scale-110 scale-95 duration-300 ease-in-out"></i></button>
+                        <div class="carosel-cards flex  gap-8 ">
                             <div class="card rounded-xl shadow-lg shadow-slate-300 lg:hidden">
                                 <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
                                 <div class="px-3 py-4">
@@ -232,6 +239,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="card rounded-xl shadow-lg shadow-slate-300 md:hidden">
                                 <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
                                 <div class="px-3 py-4">
@@ -270,6 +278,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card rounded-xl shadow-lg shadow-slate-300">
                                 <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
                                 <div class="px-3 py-4">
@@ -291,7 +300,7 @@
                             </div>
                         </div>
                         <button class="right-slide"><i
-                                class="fa-solid fa-angle-right text-3xl text-slate-500"></i></button>
+                                class="fa-solid fa-angle-right text-3xl text-slate-500 hover:scale-110 scale-95 duration-300 ease-in-out"></i></button>
                     </div>
                 </div>
 

@@ -1,7 +1,19 @@
+// menu bar hamburger js
 
+const btn = document.querySelector(".mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
+const menuLines = document.querySelectorAll(".line");
+btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menuLines[0].classList.toggle("rotate-45");
+    menuLines[1].classList.toggle("opacity-0");
+    menuLines[2].classList.toggle("-rotate-45");
+});
+
+// Star Ratings js
 const stars = document.querySelectorAll(".star");
 let currRating = 0;
-console.log(stars);
+// console.log(stars);
 
 for (let iter = 0; iter < stars.length; iter++) {
     stars[iter].starNumber = iter + 1;
@@ -45,16 +57,40 @@ function initializeStar(currStar) {
     }
 }
 
+// Swaping Images From Side To Main
+const sideImages = document.querySelectorAll(".side-image");
+const mainImage = document.querySelector(".main-image");
+
+console.log(sideImages);
+console.log(mainImage);
+
+sideImages.forEach((image) => {
+    image.addEventListener("click", (e) => {
+        removeHighlight();
+        image.firstElementChild.classList.add("highlight-selected");
+        mainImage.firstElementChild.setAttribute("src", image.firstElementChild.firstElementChild.getAttribute("src"));
+    })
+})
+
+function removeHighlight() {
+    sideImages.forEach((image) => {
+
+        if (image.firstElementChild.classList.contains("highlight-selected")) {
+            image.firstElementChild.classList.remove("highlight-selected");
+        }
+    })
+}
 
 
+// Image Carosel
+const leftSlide = document.querySelector(".left-slide");
+const rightSlide = document.querySelector(".right-slide");
 
+const caroselCardContainer = document.querySelector(".carosel-cards")
+const caroselCards = caroselCardContainer.children;
+// console.log(caroselCards);
+// console.log(leftSlide, rightSlide);
 
-const btn = document.querySelector(".mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-const menuLines = document.querySelectorAll(".line");
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menuLines[0].classList.toggle("rotate-45");
-    menuLines[1].classList.toggle("opacity-0");
-    menuLines[2].classList.toggle("-rotate-45");
+rightSlide.addEventListener("click",(e)=>{
+
 });
