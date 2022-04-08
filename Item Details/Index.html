@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Style/slider.css">
     <link rel="stylesheet" href="/style/style.css">
+    <script src="/slider.js" type="module" defer></script>
     <script src="/app.js" type="module" defer></script>
     <title>Item Details</title>
 </head>
 
-<body class="bg-[url('Images/Background.png')]">
+<body class="bg-[url('Images/Background.png')] min-w-fit">
 
     <!-- Wrapper Around The Whole Elements  -->
     <div class="wrapper w-11/12 m-auto md:w-10/12">
@@ -179,17 +181,17 @@
 
                             <div class="flex gap-6 ml-2 w-full justify-between">
                                 <div class="flex gap-2 items-center hover:scale-125 duration-300 ease-in-out"><i
-                                        class="fa-solid fa-calendar-days text-xl text-primary-blue"></i>
+                                        class="fa-solid fa-calendar-days text-xl text-primary-blue hover:text-cyan-400"></i>
                                     <div>
-                                        <p class="text-xs text-primary-blue-light">Date Posted</p>
-                                        <p class="text-sm text-primary-blue">12-MAR-2022</p>
+                                        <p class="text-xs text-primary-blue-light hover:text-cyan-400">Date Posted</p>
+                                        <p class="text-sm text-primary-blue hover:text-cyan-400">12-MAR-2022</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-2 items-center hover:scale-125 duration-300 ease-in-out">
-                                    <div><i class="fa-solid fa-location-dot text-xl text-primary-blue"></i></div>
+                                    <div><i class="fa-solid fa-location-dot text-xl text-primary-blue hover:text-cyan-400"></i></div>
                                     <div>
-                                        <p class="text-xs text-primary-blue-light">Location</p>
-                                        <p class="text-sm text-primary-blue">Banaras</p>
+                                        <p class="text-xs text-primary-blue-light hover:text-cyan-400">Location</p>
+                                        <p class="text-sm text-primary-blue hover:text-cyan-400">Banaras</p>
                                     </div>
                                 </div>
                             </div>
@@ -228,76 +230,17 @@
                     <hr class="border-[0.1rem] my-4">
                     <div class="flex items-center justify-around gap-8">
                         <button class="left-slide"><i
-                                class="fa-solid fa-angle-left text-3xl text-slate-500 hover:scale-110 scale-95 duration-300 ease-in-out"></i></button>
-                        <div class="carosel-cards flex  gap-8 ">
-                            <div class="card rounded-xl shadow-lg shadow-slate-300 lg:hidden">
-                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
-                                <div class="px-3 py-4">
+                                class="fa-solid fa-angle-left text-3xl text-slate-500 hover:scale-125 hover:text-slate-600 ml-4 active:scale-95 duration-300 ease-in-out"></i></button>
+                        <div class="carosel-cards flex glider gap-8 w-full">
+                            <div class="card rounded-xl overflow-hidden shadow-lg shadow-slate-300 w-[20rem] h-80 hover:scale-110 duration-500 ease-in-out">
+                                <img src="Images/image 2.png" class="h-44 w-full object-cover object-top" alt="">
+                                <div class="px-3 py-4 flex flex-col gap-3 w-full">
                                     <div class="flex text-primary-blue-dark items-center">
                                         <p class="text-primary-blue mr-2 text-md">Price : </p> <i
                                             class="fa-solid fa-indian-rupee-sign text-xl"></i>
                                         <p class=" text-xl font-bold ml-1">1,000</p>
                                     </div>
-                                    <div class="mt-6">
-                                        <div class=" text-primary-blue">
-                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
-                                                    Iqbal</span></p>
-                                        </div>
-                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
-                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card rounded-xl shadow-lg shadow-slate-300 md:hidden">
-                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
-                                <div class="px-3 py-4">
-                                    <div class="flex text-primary-blue-dark items-center">
-                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
-                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
-                                        <p class=" text-xl font-bold ml-1">1,000</p>
-                                    </div>
-                                    <div class="mt-6">
-                                        <div class=" text-primary-blue">
-                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
-                                                    Iqbal</span></p>
-                                        </div>
-                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
-                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card rounded-xl shadow-lg shadow-slate-300 sm:hidden">
-                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
-                                <div class="px-3 py-4">
-                                    <div class="flex text-primary-blue-dark items-center">
-                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
-                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
-                                        <p class=" text-xl font-bold ml-1">1,000</p>
-                                    </div>
-                                    <div class="mt-6">
-                                        <div class=" text-primary-blue">
-                                            <p class="text-sm">Written By : <span class="font-semibold">Faiz
-                                                    Iqbal</span></p>
-                                        </div>
-                                        <div class="mt-2 flex"><i class="fa-solid fa-star text-yellow-400 mr-1"></i>
-                                            <p class="text-xs font-bold text-primary-blue">4.5/5 | 100 Ratings</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card rounded-xl shadow-lg shadow-slate-300">
-                                <img src="Images/image 2.png" class="h-44 w-full object-cover" alt="">
-                                <div class="px-3 py-4">
-                                    <div class="flex text-primary-blue-dark items-center">
-                                        <p class="text-primary-blue mr-2 text-md">Price : </p> <i
-                                            class="fa-solid fa-indian-rupee-sign text-xl"></i>
-                                        <p class=" text-xl font-bold ml-1">1,000</p>
-                                    </div>
-                                    <div class="mt-6">
+                                    <div class="mt-6 ">
                                         <div class=" text-primary-blue">
                                             <p class="text-sm">Written By : <span class="font-semibold">Faiz
                                                     Iqbal</span></p>
@@ -310,7 +253,7 @@
                             </div>
                         </div>
                         <button class="right-slide"><i
-                                class="fa-solid fa-angle-right text-3xl text-slate-500 hover:scale-110 scale-95 duration-300 ease-in-out"></i></button>
+                                class="fa-solid fa-angle-right text-3xl text-slate-500 hover:scale-125 hover:text-slate-600 mr-4 active:scale-95 duration-300 ease-in-out"></i></button>
                     </div>
                 </div>
 

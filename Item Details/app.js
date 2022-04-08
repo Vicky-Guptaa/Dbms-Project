@@ -83,14 +83,16 @@ function removeHighlight() {
 
 
 // Image Carosel
-const leftSlide = document.querySelector(".left-slide");
-const rightSlide = document.querySelector(".right-slide");
 
-const caroselCardContainer = document.querySelector(".carosel-cards")
-const caroselCards = caroselCardContainer.children;
-// console.log(caroselCards);
-// console.log(leftSlide, rightSlide);
+new Glider(document.querySelector('.glider'), {
+    arrows: {
+        prev: document.querySelector('.left-slide'),
+        // may also pass element directly
+        next: document.querySelector('.right-slide')
+    },
 
-rightSlide.addEventListener("click",(e)=>{
-
+    // allow mouse dragging
+    draggable: true,
+    // how much to scroll with each mouse delta
+    dragVelocity: 1,
 });
