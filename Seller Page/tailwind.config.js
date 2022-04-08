@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["*"],
+  content: ["*.*"],
   theme: {
     screens: {
       '2xl': { 'max': '1536px' },
